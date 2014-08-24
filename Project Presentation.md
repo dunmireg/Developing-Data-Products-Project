@@ -49,13 +49,11 @@ Example
 
 So for example if we had an auto loan with: 
 
-- Principal of $15,000
+- Principal of $15,000 with Down Payment of $2,000
 
-- Down Payment of $2,000
+- APR of 5% (annual interest) and a Term of 5 years 
 
-- APR of 5% (annual interest)
-
-- Term of 5 years 
+NB: This all happens behind the scenes in the application along with some formatting
 
 
 ```r
