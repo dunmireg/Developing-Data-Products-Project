@@ -68,11 +68,3 @@ payment
 ```
 
 
-Notes and Further Directions
-==================================================
-
-So this application obviously has a few restrictions. The user needs to do math to get the interest and term correct (these are labeled in the application). 
-
-This also only works for one formula, it does not allow for different forms of interest or a variable rate or adding extra payments. 
-
-There are many future applications that could add complexity and options to this payment calculator, which may be interesting to explore. 
