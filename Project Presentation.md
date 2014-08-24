@@ -2,6 +2,7 @@ Shiny Monthly Payment Calculator
 ========================================================
 author: Glenn Dunmire
 date: August 24, 2014
+transition: fade
 
 Background and Motivation
 ========================================================
