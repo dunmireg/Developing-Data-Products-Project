@@ -1,11 +1,13 @@
 shinyServer(function(input, output) {
-  output$newPlot <- renderPlot({
-   n <- input$n
-   mean <- input$mean
-   stdev <- input$stdev
-   dist <- rnorm(n = n, mean = mean, sd = stdev)
-   par(mfrow=c(1,2))
-   hist(dist)
-   plot(density(dist))
+  output$table <- renderTable({
+    input$action
+    isolate(paste(loan <- input$loan, down <- input$down, term <- input$term, interest <- input$interest/100))
+    
+    principal <- loan - down
+    monInter <- interest/12
+    payment <-  principal * ((monInter * (1 + monInter)^term)/((1 + monInter)^term - 1))
+      
+    data.frame(loan, down, principal, term, interest, payment)
   })
+  
 })

@@ -1,15 +1,16 @@
 shinyUI(fluidPage(
-  titlePanel("Modeling Normal Distributions"),
+  titlePanel("Shiny Monthly Payment Calculator"),
   
   sidebarLayout(
     sidebarPanel(
-      numericInput("n", label = "Sample Size", value = 100),
-      numericInput("mean", label = "Sample Mean", value = 0),
-      numericInput("stdev", label = "Standard Deviation", value = 1)
-      ##actionButton("action", label = "Compute")
+      numericInput("loan", label = "Loan Total", value = 10000),
+      numericInput("down", label = "Down Payment", value = 0),
+      numericInput("term", label = "Term in Months", value = 60),
+      numericInput("interest", label = "Interest per year (APR)", value = 5), 
+      actionButton("action", label = "Calculate")
     ),
     mainPanel(
-      plotOutput("newPlot")
+      tableOutput("table")
     )
   )
   
