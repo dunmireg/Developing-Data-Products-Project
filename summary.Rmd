@@ -1,0 +1,12 @@
+---
+title: "summary"
+author: "Glenn Dunmire"
+date: "Saturday, August 23, 2014"
+output: html_document
+---
+
+##Introduction
+
+This is just a brief explainer for this application. Many tasks in life such as a mortgage or auto payment require a monthly payment based on interest and length of the loan. This application is meant to make it easier to automatically compute this payment. 
+
+##Inputs 
